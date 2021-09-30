@@ -82,7 +82,7 @@ WSGI_APPLICATION = 'prj_tienda.wsgi.application'
 #         'HOST': 'facundocejas.mysql.pythonanywhere-services.com',
 #         'NAME': 'facundocejas$default',
 #         'USER': 'facundocejas',
-#         'PASSWORD':'Password 1996',
+#         'PASSWORD':'',
 #     }
 # }
 ### Databases de dev

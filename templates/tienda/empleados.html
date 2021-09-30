@@ -1,22 +1,9 @@
-<!DOCTYPE html>
-{%load static%}
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lista de empleados</title>
-    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
-    <link rel="stylesheet" href="{% static 'css/bootstrap-theme.css' %}" media="screen">
-</head>
-
-<body>
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12 maincontent">
-                <h1>Tienda Virtual</h1>
-                <h3>Listado de empleados</h3>
+{% extends "base.html" %}
+{% load static %}
+{% block titulo_pagina %} Listado de Empleados {% endblock %}
+{% block titulo_principal %} Ventas {% endblock %}
+{% block titulo_secundario %} Lista de empleados {% endblock %}
+{% block principal %}    
                 <table class="table table-striped">
                     <thead>
                         <tr>
@@ -42,4 +29,4 @@
     </div>
 </body>
 
-</html>
+{% endblock %}
