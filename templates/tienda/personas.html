@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% load static %}
+{% block titulo_pagina %} Listado de personas {% endblock %}
+{% block titulo_principal %} Ventas {% endblock %}
+{% block titulo_secundario %} Lista de personas {% endblock %}
+{% block principal %}               
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Apellido</th>
+                            <th>Nombre</th>
+                            <th>Localidad</th>
+                            <th>MODIFICAR</th>
+                            <th>ELIMINAR</th>
+                        </tr>
+                    </thead>
+                    {% for persona in personas %}
+                    <tr>
+                        <td>{{persona.apellido}}</td>
+                        <td>{{persona.nombre}}</td>
+                        <td>{{persona.localidad}}</td>
+                        <td><a href="{% url 'modificar_persona' persona.num_doc %}"><img src="{% static 'img/Editar_25.png' %}"></a></td>
+                        <td><a href="{% url 'eliminar_persona' persona.num_doc %}"><img src="{% static 'img/Eliminar_25.png' %}"></a></td>
+                    </tr>
+                    {% endfor %}
+                </table>
+{% endblock %}

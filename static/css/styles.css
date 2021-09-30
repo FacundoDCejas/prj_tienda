@@ -1,0 +1,21 @@
+.tabla_clientes {
+    background: grey;
+    font-family: 'Courier New', Courier, monospace;
+    width: 100px;
+    text-align: left;
+    border-collapse: collapse;
+    
+}
+
+table td {
+    border: 2px solid green; 
+  }
+table th{
+    border: 2px solid orange;
+    padding: 0px 10px;
+    background: grey;
+}
+
+table tr:nth-child(odd) {
+    background: #D0E4F5;
+  }
